@@ -46,7 +46,7 @@ Vad säger: `git status`?
 
 Kör: `git commit -m "Skrev första stycket` Sparas dina ändringa till repositoriet? Vad säger: `git status`? 
 
-Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (`add`) och sedan sparar du det (`commit`).
+Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (`add`) och sedan sparar du det (`commit`). Det går att kombinera de två med `git commit -am "Här skriver du kommentaren"`
 
 ### 5. Ladda upp dina filer till Github
 
