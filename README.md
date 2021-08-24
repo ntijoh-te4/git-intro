@@ -56,6 +56,10 @@ Se historiken med `git log` eller överkursvarianten: `git log --graph --decorat
 
 ## Delade repositories
 
+Det finns (minst) två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.
+
+I större projekt använder de oftast `fork` and `pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna (`merge`).
+
 Läs: https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
 
 ## SSH och SSH-nycklar
