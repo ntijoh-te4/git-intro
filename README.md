@@ -1,3 +1,4 @@
+
 # git-intro
 Introduktion till versionshantering i Git
 
@@ -11,20 +12,14 @@ Följande videos (~5min / video) är en kort intro till versionshantering och Gi
 
 ## Git-övningar
 
+Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator (`add` och `commit`) som sedan laddas upp (`push`). 
 
-TODO: Vänd på steken. Dvs. skapa repot i github först, clona osv, sedan jobba mot det i övningarna
+### 1. Skapa och ladda ner ett repository på Github
 
-Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med din data lokalt på din dator som sedan laddas upp. I första övningarna arbetar du med ett repository som bara finns lokalt på din dator. I nästföljande övningar skapar du ett repository på Github som du arbetar mot.
+Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till `learning-vcs.git`. Du kan göra det privat. Lämna övriga saker.
 
-### 1. Skapa ett (lokalt) repository
-
-Kör: `git init learning-vcs`
-
-Undersök mappen learning-vcs (i terminalen). Vad finns i mappen?
-
+Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo `git@github.com:olantig/learning-vcs.git` Glöm inte ersätta olantig med din användare.
 Kör: `git status`
-
-Vad gör de två kommandona?
 
 ### 2. Lägg in en ny fil till i repository
 
@@ -52,13 +47,17 @@ Kör: `git commit -m "Skrev första stycket` Sparas dina ändringa till reposito
 
 Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (`add`) och sedan sparar du det (`commit`).
 
-### 5. 
+### 5. Ladda upp dina filer till Github
 
-`git remote add origin git@github.com:olantig/learning-vcs.git`
-`git remote -v`
+Ladda upp dina ändringar till Github med: `git push`. Försäkra dig om att de finns genom att öppna webbläsaren och se att ändringarna finns där.
 
+Se historiken med `git log` eller överkursvarianten: `git log --graph --decorate --abbrev-commit --all --pretty=oneline`
 
-### 3. Historik
-Kör: `git log --graph --decorate --abbrev-commit --all --pretty=oneline`
+## Delade repositories
+
+## SSH och SSH-nycklar
+
+## Strategier 
+Tex hur ofta commitar och pushar man?
 
 
