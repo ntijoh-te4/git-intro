@@ -2,6 +2,8 @@
 # git-intro
 Introduktion till versionshantering i Git
 
+Den officiella boken finns fritt på: https://git-scm.com/book/ I den står troligen allt.
+
 ## Versionshantering?
 
 Följande videos (~5min / video) är en kort intro till versionshantering och Git.
@@ -55,6 +57,10 @@ Ladda upp dina ändringar till Github med: `git push`. Försäkra dig om att de 
 Se historiken med `git log` eller överkursvarianten: `git log --graph --decorate --abbrev-commit --all --pretty=oneline`
 
 ## Delade repositories
+
+Det finns (minst) två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.
+
+I större projekt använder de oftast `fork` and `pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna (`merge`).
 
 Läs: https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
 
