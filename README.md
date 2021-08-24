@@ -12,14 +12,15 @@ Följande videos (~5min / video) är en kort intro till versionshantering och Gi
 
 ## Git-övningar
 
-Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator (`add` och `commit`) som sedan laddas upp (`push`). 
+Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator (`add` och `commit`) som sedan laddas upp (`push`) och ner (`pull`). 
 
 ### 1. Skapa och ladda ner ett repository på Github
 
 Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till `learning-vcs.git`. Du kan göra det privat. Lämna övriga saker.
 
-Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo `git@github.com:olantig/learning-vcs.git` Glöm inte ersätta olantig med din användare.
-Kör: `git status`
+Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo `git@github.com:olantig/learning-vcs.git` Glöm inte ersätta ***olantig*** med din användare.  
+
+Kolla med: `git status`
 
 ### 2. Lägg in en ny fil till i repository
 
@@ -55,9 +56,18 @@ Se historiken med `git log` eller överkursvarianten: `git log --graph --decorat
 
 ## Delade repositories
 
+Läs: https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
+
 ## SSH och SSH-nycklar
 
+För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automagiskt.
+
+Läs: https://en.wikipedia.org/wiki/Secure_Shell och https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh 
+
+Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
 ## Strategier 
-Tex hur ofta commitar och pushar man?
+
+TODO: Tex hur ofta commitar och pushar man?
 
 
