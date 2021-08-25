@@ -1,6 +1,6 @@
 
 # git-intro
-Introduktion till versionshantering i Git
+Introduktion till versionshantering i Git.
 
 Den officiella boken finns fritt på: https://git-scm.com/book/ I den står troligen allt.
 
