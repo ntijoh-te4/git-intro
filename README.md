@@ -24,6 +24,8 @@ Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det 
 
 Kolla med: `git status`
 
+För att senare uppdatera / ladda ner ändringar från samma repository används `git pull`
+
 ### 2. Lägg in en ny fil till i repository
 
 Skapa filen `fil1.txt` (med `touch fil1.txt` eller en editor) i din projektmapp
