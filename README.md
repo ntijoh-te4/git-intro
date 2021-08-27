@@ -20,7 +20,7 @@ Git är ett distribuerat versionssystem vilket betyder att all data finns på al
 
 Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till `learning-vcs.git`. Du kan göra det privat. Lämna övriga saker.
 
-Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo `git@github.com:olantig/learning-vcs.git` Glöm inte ersätta ***olantig*** med din användare.  
+Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo `git clone git@github.com:olantig/learning-vcs.git` Glöm inte ersätta ***olantig*** med din användare.  
 
 Kolla med: `git status`
 
