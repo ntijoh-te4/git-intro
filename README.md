@@ -66,6 +66,9 @@ I större projekt använder de oftast `fork` and `pull` där vem som helst kan g
 
 Läs: https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
 
+## Branching
+todo
+
 ## SSH och SSH-nycklar
 
 För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automagiskt.
