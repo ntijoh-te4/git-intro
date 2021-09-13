@@ -56,7 +56,7 @@ Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som
 
 Ladda upp dina ändringar till Github med: `git push`. Försäkra dig om att de finns genom att öppna webbläsaren och se att ändringarna finns där.
 
-Se historiken med `git log` eller överkursvarianten: `git log --graph --decorate --abbrev-commit --all --pretty=oneline`
+Se historiken med `git log --oneline` eller överkursvarianten: `git log --graph --decorate --abbrev-commit --all --pretty=oneline`
 
 ## Delade repositories
 
