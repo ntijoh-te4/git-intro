@@ -74,30 +74,21 @@ Läs: https://docs.github.com/en/github/collaborating-with-pull-requests/getting
 
 När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö dit du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
 
-Du skapar en branch med: `git branch feature-a`
-Listar vilka branches som finns med `git branch -a` Branchen som har en `*` är den valda branchen dvs. den du arbetar i just precis nu.
+Du skapar en branch med: `git branch feature-a` listar vilka branches som finns med `git branch -a` Branchen som har en `*` är den valda branchen dvs. den du arbetar i just precis nu.
 
-Du arbetar fortfarande i din huvudbranch och du måste aktivt byta till den nya du skapade med `git checkout feature-a`. Du bytr tillbaka till master med `git checkout master`.
+Du arbetar fortfarande i din huvudbranch och du måste aktivt byta till den nya du skapade med `git checkout feature-a`. Du bytr tillbaka till master med `git checkout master`. Med flaggan `-d` kan du både skapa och byta branch samtidigt dvs `git checkout -b ny-branch`.
 
-git branch -D ny-branch - ta bort branch som ej är in-mergad
-
- 
-git branch ny-branch
-git checkout ny-branch
-
-git checkout -b ny-branch (skapar + checkar ut)
+Du kan ta bort en branch med `git branch -D ny-branch`
 
 Se: https://www.youtube.com/watch?v=QV0kVNvkMxc
 
 ### Merga branch (tillbaka till huvudbranchen)
 
-git diff
+När du arbetat färdigt i din nya branch är det dags att merga tillbaka den till master. Byt branch till master och sedan merge: `git merge feature-a`. Kan git så slår den ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt.
 
-merge + conflicts
+`git diff` viskar vilka ändringar som gjorts sedan commit. Går även att jämföra olika branches.
 
 Se: https://www.youtube.com/watch?v=XX-Kct0PfFc
-
-git merge ny-branch (mergar in ändr. från ny-branch till vald branch, typ master)
 
 ## SSH och SSH-nycklar
 
