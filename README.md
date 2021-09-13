@@ -77,16 +77,18 @@ Läs: https://www.atlassian.com/git/tutorials/using-branches/git-checkout
 När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö dit du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
 
 Du skapar och byter så du arbetar i din nya branch med kommandot: `git checkout -b ny-branch`
-Du listar alla branches med `git branch -a`. Den med `*` är din aktiva branch.
+Du listar alla branches med `git branch -a`. 
 Du byter tillbaka till main med `git checkout main`. 
 
-När du arbetat färdigt gör du som vanligt, `git add .` och `git commit -m "Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern. Då måste du berätta till var den ska pushas: `git push --set-upstream origin ny-branch`.
-
-Du kan ta bort en branch med `git branch -D ny-branch` och du måste ta bort dina branches efter att de är mergade.
+När du arbetat färdigt gör du som vanligt, `git add .` och `git commit -m "Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern och då måste du berätta till var den ska pushas: `git push --set-upstream origin ny-branch` (den finns än så länge bara på din dator).
 
 ### Merga branch (tillbaka till huvudbranchen)
 
-När du arbetat färdigt i din nya branch är det dags att merga tillbaka den till main: `git merge main`. Kan git så slår den ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. Den gör alltså en merge från din nya till main.
+När du arbetat färdigt i din nya branch är det dags att merga den till main. 
+
+Byt aktiv branch till main (`git checkout main`) och merga med: `git merge ny-branch`. Git försöker slå ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. 
+
+När du mergat din branch kan du ta bort den med `git branch -d ny-branch`.
 
 `git diff` viskar vilka ändringar som gjorts sedan commit. Går även att jämföra olika branches.
 
