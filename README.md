@@ -70,23 +70,25 @@ Läs: https://docs.github.com/en/github/collaborating-with-pull-requests/getting
 
 ## Branching och merging
 
-### Skapa branch
-
-Läs: https://www.atlassian.com/git/tutorials/using-branches/git-checkout 
+Läs: 
+* https://www.atlassian.com/git/tutorials/using-branches/git-checkout
+* https://www.atlassian.com/git/tutorials/using-branches/git-merge 
 
 När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö dit du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
 
-Du skapar och byter så du arbetar i din nya branch med kommandot: `git checkout -b ny-branch`
-Du listar alla branches med `git branch -a`. 
-Du byter tillbaka till main med `git checkout main`. 
+Som standard på Github får alla repositories en branch som heter `main`.
 
-När du arbetat färdigt gör du som vanligt, `git add .` och `git commit -m "Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern och då måste du berätta till var den ska pushas: `git push --set-upstream origin ny-branch` (den finns än så länge bara på din dator).
+Skapa en ny och byt aktiv branch till din nya med kommandot: `git checkout -b ny-branch`.
+Se vilka branches som finns i repositoryt på din dator: `git branch`. 
+Byter tillbaka till main: `git checkout main`. 
 
-### Merga branch (tillbaka till huvudbranchen)
+När du arbetat färdigt gör du som vanligt, `git commit -ma "Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern (den finns än så länge bara på din dator) och då måste du berätta till var den ska pushas: `git push --set-upstream origin ny-branch`.
 
 När du arbetat färdigt i din nya branch är det dags att merga den till main. 
 
-Byt aktiv branch till main (`git checkout main`) och merga med: `git merge ny-branch`. Git försöker slå ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. 
+Byt aktiv branch till main (`git checkout main`) och merga med: `git merge ny-branch`. Git försöker slå ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. Då får du en sk. merge-konflikt (se bild).
+
+![Exempel på mergekonflikt](img/git-merge-exempel-konflikt.png)
 
 När du mergat din branch kan du ta bort den med `git branch -d ny-branch`.
 
