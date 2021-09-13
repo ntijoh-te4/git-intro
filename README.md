@@ -80,7 +80,7 @@ Du skapar och byter så du arbetar i din nya branch med kommandot: `git checkout
 Du listar alla branches med `git branch -a`. Den med `*` är din aktiva branch.
 Du byter tillbaka till main med `git checkout main`. 
 
-När du arbetat färdigt gör du som vanligt, `git add .` och `git commit -m "Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern. Då måste du berätta till var den ska pushas. Vill du få upp den till samma repository som main lägger du till origin `git push origin`.
+När du arbetat färdigt gör du som vanligt, `git add .` och `git commit -m "Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern. Då måste du berätta till var den ska pushas. Vill du få upp den till samma repository som main lägger du till origin `git push --set-upstream origin ny-branch`.
 
 Du kan ta bort en branch med `git branch -D ny-branch` och du måste ta bort dina branches efter att de är mergade.
 
