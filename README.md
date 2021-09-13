@@ -4,6 +4,8 @@ Introduktion till versionshantering i Git.
 
 Den officiella boken finns fritt på: https://git-scm.com/book/ En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
 
+Fin, lång genomgång av massa git: https://www.youtube.com/watch?v=RGOj5yH7evk
+
 ## Versionshantering?
 
 Följande videos (~5min / video) är en kort intro till versionshantering och Git.
@@ -65,6 +67,37 @@ Det finns (minst) två olika modeller för att samarbeta via Github. Ni kan anti
 I större projekt använder de oftast `fork` and `pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna (`merge`).
 
 Läs: https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
+
+## Branching och merging
+
+### Skapa branch
+
+När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö dit du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
+
+Du skapar en branch med: `git branch feature-a`
+Listar vilka branches som finns med `git branch -a` Branchen som har en `*` är den valda branchen dvs. den du arbetar i just precis nu.
+
+Du arbetar fortfarande i din huvudbranch och du måste aktivt byta till den nya du skapade med `git checkout feature-a`. Du bytr tillbaka till master med `git checkout master`.
+
+git branch -D ny-branch - ta bort branch som ej är in-mergad
+
+ 
+git branch ny-branch
+git checkout ny-branch
+
+git checkout -b ny-branch (skapar + checkar ut)
+
+Se: https://www.youtube.com/watch?v=QV0kVNvkMxc
+
+### Merga branch (tillbaka till huvudbranchen)
+
+git diff
+
+merge + conflicts
+
+Se: https://www.youtube.com/watch?v=XX-Kct0PfFc
+
+git merge ny-branch (mergar in ändr. från ny-branch till vald branch, typ master)
 
 ## SSH och SSH-nycklar
 
