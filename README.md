@@ -78,6 +78,8 @@ Du skapar en branch med: `git branch feature-a` listar vilka branches som finns 
 
 Du arbetar fortfarande i din huvudbranch och du måste aktivt byta till den nya du skapade med `git checkout feature-a`. Du bytr tillbaka till master med `git checkout master`. Med flaggan `-d` kan du både skapa och byta branch samtidigt dvs `git checkout -b ny-branch`.
 
+När du arbetat färdigt gör du som vanligt, `git add .` och `git commit -m"Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern. Då måste du berätta till var den ska pushas. Vill du få upp den till samma repository som master lägger du till origin `git push origin`.
+
 Du kan ta bort en branch med `git branch -D ny-branch`
 
 Se: https://www.youtube.com/watch?v=QV0kVNvkMxc
