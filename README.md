@@ -90,7 +90,7 @@ Byt aktiv branch till main (`git checkout main`) och merga med: `git merge ny-br
 
 ![Exempel på mergekonflikt](img/git-merge-exempel-konflikt.png)
 
-När du mergat din branch kan du ta bort den med `git branch -d ny-branch`.
+När du mergat din branch kan du ta bort den med `git branch -d ny-branch`. Den försvinner lokalt men finns kvar på Github. Titta under branches i ditt repository på github.com.
 
 `git diff` viskar vilka ändringar som gjorts sedan commit. Går även att jämföra olika branches.
 
