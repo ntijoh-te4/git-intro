@@ -76,9 +76,9 @@ När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapa
 
 Du skapar en branch med: `git branch feature-a` listar vilka branches som finns med `git branch -a` Branchen som har en `*` är den valda branchen dvs. den du arbetar i just precis nu.
 
-Du arbetar fortfarande i din huvudbranch och du måste aktivt byta till den nya du skapade med `git checkout feature-a`. Du bytr tillbaka till master med `git checkout master`. Med flaggan `-d` kan du både skapa och byta branch samtidigt dvs `git checkout -b ny-branch`.
+Du arbetar fortfarande i din huvudbranch och du måste aktivt byta till den nya du skapade med `git checkout feature-a`. Du byter tillbaka till main med `git checkout main`. Med flaggan `-d` kan du både skapa och byta branch samtidigt dvs `git checkout -b ny-branch`.
 
-När du arbetat färdigt gör du som vanligt, `git add .` och `git commit -m"Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern. Då måste du berätta till var den ska pushas. Vill du få upp den till samma repository som master lägger du till origin `git push origin`.
+När du arbetat färdigt gör du som vanligt, `git add .` och `git commit -m"Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern. Då måste du berätta till var den ska pushas. Vill du få upp den till samma repository som main lägger du till origin `git push origin`.
 
 Du kan ta bort en branch med `git branch -D ny-branch`
 
@@ -86,7 +86,7 @@ Se: https://www.youtube.com/watch?v=QV0kVNvkMxc
 
 ### Merga branch (tillbaka till huvudbranchen)
 
-När du arbetat färdigt i din nya branch är det dags att merga tillbaka den till master: `git merge feature-a`. Kan git så slår den ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. Den gör alltså en merge från din nya till master.
+När du arbetat färdigt i din nya branch är det dags att merga tillbaka den till main: `git merge feature-a`. Kan git så slår den ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. Den gör alltså en merge från din nya till main.
 
 `git diff` viskar vilka ändringar som gjorts sedan commit. Går även att jämföra olika branches.
 
