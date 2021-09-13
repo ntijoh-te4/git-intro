@@ -86,7 +86,7 @@ Se: https://www.youtube.com/watch?v=QV0kVNvkMxc
 
 ### Merga branch (tillbaka till huvudbranchen)
 
-När du arbetat färdigt i din nya branch är det dags att merga tillbaka den till master. Byt branch till master och sedan merge: `git merge feature-a`. Kan git så slår den ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt.
+När du arbetat färdigt i din nya branch är det dags att merga tillbaka den till master: `git merge feature-a`. Kan git så slår den ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. Den gör alltså en merge från din nya till master.
 
 `git diff` viskar vilka ändringar som gjorts sedan commit. Går även att jämföra olika branches.
 
@@ -103,5 +103,3 @@ Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan 
 ## Strategier 
 
 TODO: Tex hur ofta commitar och pushar man?
-
-
