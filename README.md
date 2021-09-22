@@ -66,7 +66,9 @@ Det finns (minst) två olika modeller för att samarbeta via Github. Ni kan anti
 
 I större projekt använder de oftast `fork` and `pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna (`merge`).
 
-Läs: https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
+Läs: 
+* https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
+* https://www.atlassian.com/git/tutorials/comparing-workflows
 
 ## Branching och merging
 
