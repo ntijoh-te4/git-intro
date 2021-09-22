@@ -76,7 +76,7 @@ Läs:
 * https://www.atlassian.com/git/tutorials/using-branches/git-checkout
 * https://www.atlassian.com/git/tutorials/using-branches/git-merge 
 
-När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö dit du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
+När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö där du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
 
 Som standard på Github får alla repositories en branch som heter `main`.
 
