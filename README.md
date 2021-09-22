@@ -44,7 +44,7 @@ Kör: `git status`
 
 Vad gör kommandona?
 
-### 4. Uppdatera en fil
+### 3. Uppdatera en fil
 
 Öppna filen fil1.txt i din texteditor med `nano fil1.txt.`, lägg till innehåll, och spara med `CTRL o`, stäng med  `CTRL x`.
 
@@ -54,7 +54,7 @@ Kör: `git commit -m "Skrev första stycket` Sparas dina ändringa till reposito
 
 Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (`add`) och sedan sparar du det (`commit`). Det går att kombinera de två med `git commit -am "Här skriver du kommentaren"`
 
-### 5. Ladda upp dina filer till Github
+### 4. Ladda upp dina filer till Github
 
 Ladda upp dina ändringar till Github med: `git push`. Försäkra dig om att de finns genom att öppna webbläsaren och se att ändringarna finns där.
 
