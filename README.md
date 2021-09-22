@@ -6,6 +6,8 @@ Den officiella boken finns gratis på: https://git-scm.com/book/ En kortare chea
 
 Fin, lång genomgång av massa git: https://www.youtube.com/watch?v=RGOj5yH7evk
 
+En kort bra beskrivning av git: https://www.youtube.com/watch?v=USjZcfj8yxE (Bryr er inte om git Branch eller git merge)
+
 ## Versionshantering?
 
 Följande videos (~5min / video) är en kort intro till versionshantering och Git.
