@@ -76,7 +76,7 @@ Läs:
 * https://www.atlassian.com/git/tutorials/using-branches/git-checkout
 * https://www.atlassian.com/git/tutorials/using-branches/git-merge 
 
-När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö dit du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
+När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö där du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
 
 Som standard på Github får alla repositories en branch som heter `main`.
 
@@ -98,7 +98,7 @@ När du mergat din branch kan du ta bort den med `git branch -d ny-branch`. Den 
 
 ## SSH och SSH-nycklar
 
-För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automagiskt.
+För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automatiskt.
 
 Läs: https://en.wikipedia.org/wiki/Secure_Shell och https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh 
 
