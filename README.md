@@ -2,11 +2,14 @@
 # git-intro
 Introduktion till versionshantering i Git.
 
-Den officiella boken finns gratis på: https://git-scm.com/book/ 
+Den officiella boken för git finns gratis på:\
+https://git-scm.com/book/ 
 
-En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
+En kortare cheat sheet finns här:\
+https://education.github.com/git-cheat-sheet-education.pdf
 
-Fin, lång genomgång av massa git: https://www.youtube.com/watch?v=RGOj5yH7evk
+Fin, lång genomgång av massa git och github:\
+https://www.youtube.com/watch?v=RGOj5yH7evk
 
 ## Versionshantering?
 
