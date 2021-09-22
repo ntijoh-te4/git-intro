@@ -1,19 +1,11 @@
 
 # git-intro
-## Länkar för Git
 
-Den officiella boken finns gratis på: https://git-scm.com/book/
-
-En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
-
-En kortare cheat sheet finns här:\
-https://education.github.com/git-cheat-sheet-education.pdf
-
-Fin, lång genomgång av massa git och github:\
-https://www.youtube.com/watch?v=RGOj5yH7evk
-
-En kort bra beskrivning av git:\
-https://www.youtube.com/watch?v=USjZcfj8yxE\
+## Länkar
+ * Kort, övergripande beskrivning: https://www.youtube.com/watch?v=USjZcfj8yxE\
+ * Den officiella boken finns gratis på: https://git-scm.com/book/
+ * En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
+ * Lång genomgång av massa Git och GitHub: https://www.youtube.com/watch?v=RGOj5yH7evk
 
 ## Versionshantering?
 
