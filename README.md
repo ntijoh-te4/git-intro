@@ -1,9 +1,10 @@
 
 # git-intro
-## Informerande länkar
+## Länkar för Git
 
-Den officiella boken för git finns gratis på:\
-https://git-scm.com/book/ 
+Den officiella boken finns gratis på: https://git-scm.com/book/
+
+En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
 
 En kortare cheat sheet finns här:\
 https://education.github.com/git-cheat-sheet-education.pdf
