@@ -4,7 +4,7 @@ Introduktion till versionshantering i Git.
 
 Den officiella boken finns gratis på: https://git-scm.com/book/
 
- En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
+En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
 
 Fin, lång genomgång av massa git: https://www.youtube.com/watch?v=RGOj5yH7evk
 
