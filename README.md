@@ -8,7 +8,7 @@ En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.p
 
 Fin, lång genomgång av massa git: https://www.youtube.com/watch?v=RGOj5yH7evk
 
-En kort bra beskrivning av git: https://www.youtube.com/watch?v=USjZcfj8yxE (Bryr er inte om git Branch eller git merge)
+En kort bra beskrivning av git: https://www.youtube.com/watch?v=USjZcfj8yxE (Bry er inte om git Branch eller git merge)
 
 ## Versionshantering?
 
