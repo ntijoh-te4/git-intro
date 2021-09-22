@@ -46,7 +46,7 @@ Vad gör kommandona?
 
 ### 4. Uppdatera en fil
 
-Öppna filen fil1.txt i din texteditor med `nano fil1.txt.`, lägg till innehåll, och spara, stäng med  `CTRL x`.
+Öppna filen fil1.txt i din texteditor med `nano fil1.txt.`, lägg till innehåll, och spara med `CTRL o`, stäng med  `CTRL x`.
 
 Vad säger: `git status`?
 
