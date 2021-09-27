@@ -40,15 +40,13 @@ För att senare uppdatera / ladda ner ändringar från samma repository används
 
 Skapa filen `fil1.txt` (med `touch fil1.txt` eller en editor) i din projektmapp
 
-Kör: `git status`
+Kör följande:
 
-Kör: `git add .`
-
-Kör: `git status`
-
-Kör: `git commit -m “Skapade dokumentet”`
-
-Kör: `git status`
+* `git status`
+* `git add .`
+* `git status`
+* `git commit -m “Skapade dokumentet”`
+* `git status`
 
 Vad gör kommandona?
 
