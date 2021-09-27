@@ -113,7 +113,3 @@ Läs:
 * https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh 
 
 Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-
-## Strategier 
-
-TODO: Tex hur ofta commitar och pushar man?
