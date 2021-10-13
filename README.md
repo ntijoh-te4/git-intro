@@ -25,23 +25,21 @@ Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det 
 
 Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo `git clone git@github.com:olantig/learning-vcs.git` Glöm inte ersätta ***olantig*** med din användare.  
 
-Kolla med: `git status`
+Kolla statusen med: `git status`
 
-För att senare uppdatera / ladda ner ändringar från samma repository används `git pull`
+För att senare uppdatera / ladda ner ändringar från samma repository används: `git pull`
 
 ### 2. Lägg in en ny fil till i repository
 
 Skapa filen `fil1.txt` (med `touch fil1.txt` eller en editor) i din projektmapp
 
-Kör: `git status`
+Kör följande:
 
-Kör: `git add .`
-
-Kör: `git status`
-
-Kör: `git commit -m “Skapade dokumentet”`
-
-Kör: `git status`
+* `git status`
+* `git add .`
+* `git status`
+* `git commit -m “Skapade dokumentet”`
+* `git status`
 
 Vad gör kommandona?
 
@@ -51,7 +49,9 @@ Vad gör kommandona?
 
 Vad säger: `git status`?
 
-Kör: `git commit -m "Skrev första stycket` Sparas dina ändringa till repositoriet? Vad säger: `git status`? 
+Kör: `git commit -m "Skrev första stycket"` Sparas dina ändringa till repositoriet? 
+
+Vad säger: `git status`? 
 
 Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (`git add`) och sedan sparar du det (`git commit`). Det går att kombinera de två med `git commit -am "Här skriver du kommentaren"`
 
@@ -63,9 +63,9 @@ Se historiken med `git log --oneline` eller överkursvarianten: `git log --graph
 
 ## Delade repositories
 
-Det finns (minst) två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.
+Det finns minst två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.
 
-I större projekt använder de oftast `fork` and `pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna (`merge`).
+I större projekt används oftast `fork` and `pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna `merge`.
 
 Läs: 
 * https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
@@ -95,16 +95,14 @@ Byt aktiv branch till main (`git checkout main`) och merga med: `git merge ny-br
 
 När du mergat din branch kan du ta bort den med `git branch -d ny-branch`. Den försvinner lokalt men finns kvar på Github. Titta under branches i ditt repository på github.com.
 
-`git diff` viskar vilka ändringar som gjorts sedan commit. Går även att jämföra olika branches.
+`git diff` visar vilka ändringar som gjorts sedan commit. Det går även att jämföra olika branches.
 
 ## SSH och SSH-nycklar
 
 För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automatiskt.
 
-Läs: https://en.wikipedia.org/wiki/Secure_Shell och https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh 
+Läs:
+* https://en.wikipedia.org/wiki/Secure_Shell
+* https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh 
 
 Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-
-## Strategier 
-
-TODO: Tex hur ofta commitar och pushar man?
