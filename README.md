@@ -34,14 +34,15 @@ För att senare uppdatera / ladda ner ändringar från samma repository används
 Skapa filen `fil1.txt` (med `touch fil1.txt` eller en editor) i din projektmapp
 
 Kör följande:
-
 * `git status`
-* `git add .`
+* `git add fil1.txt`
 * `git status`
 * `git commit -m “Skapade dokumentet”`
 * `git status`
 
 Vad gör kommandona?
+
+Kör du koden `git add .` eller `git add *` så lägger du till alla ändringar till alla filer du har gjort.
 
 ### 3. Uppdatera en fil
 
