@@ -1,20 +1,19 @@
 
 # git-intro
-Introduktion till versionshantering i Git.
 
-Den officiella boken finns gratis på: https://git-scm.com/book/ En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
+## Länkar
+ * Kort, övergripande beskrivning: https://www.youtube.com/watch?v=USjZcfj8yxE\
+ * Den officiella boken finns gratis på: https://git-scm.com/book/
+ * En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
+ * Lång genomgång av massa Git och GitHub: https://www.youtube.com/watch?v=RGOj5yH7evk
 
-Fin, lång genomgång av massa git: https://www.youtube.com/watch?v=RGOj5yH7evk
-
-En kort bra beskrivning av git: https://www.youtube.com/watch?v=USjZcfj8yxE (Bryr er inte om git Branch eller git merge)
-
-## Versionshantering?
+## Versionshantering
 
 Följande videos (~5min / video) är en kort intro till versionshantering och Git.
-* https://git-scm.com/video/what-is-version-control
-* https://git-scm.com/video/what-is-git 
-* https://git-scm.com/video/get-going (delar är redan sagt i del 1)
-* https://git-scm.com/video/quick-wins (denna kan ni bara skumma, minst viktig av dessa 4) 
+* Vad är versionshantering?: https://git-scm.com/video/what-is-version-control
+* Vad är Git?: https://git-scm.com/video/what-is-git 
+* Börja med Git: https://git-scm.com/video/get-going (delar är redan sagt i del 1)
+* Fördelar med Git: https://git-scm.com/video/quick-wins (denna kan ni bara skumma, minst viktig av dessa 4) 
 
 ## Git-övningar
 
@@ -26,23 +25,20 @@ Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det 
 
 Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo `git clone git@github.com:olantig/learning-vcs.git` Glöm inte ersätta ***olantig*** med din användare.  
 
-Kolla med: `git status`
+Kolla statusen med: `git status`
 
-För att senare uppdatera / ladda ner ändringar från samma repository används `git pull`
+För att senare uppdatera / ladda ner ändringar från samma repository används: `git pull`
 
 ### 2. Lägg in en ny fil till i repository
 
 Skapa filen `fil1.txt` (med `touch fil1.txt` eller en editor) i din projektmapp
 
-Kör: `git status`
-
-Kör: `git add fil1.txt`
-
-Kör: `git status`
-
-Kör: `git commit -m “Skapade dokumentet”`
-
-Kör: `git status`
+Kör följande:
+* `git status`
+* `git add fil1.txt`
+* `git status`
+* `git commit -m “Skapade dokumentet”`
+* `git status`
 
 Vad gör kommandona?
 
@@ -54,7 +50,9 @@ Kör du koden `git add .` eller `git add *` så lägger du till alla ändringar 
 
 Vad säger: `git status`?
 
-Kör: `git commit -m "Skrev första stycket` Sparas dina ändringa till repositoriet? Vad säger: `git status`? 
+Kör: `git commit -m "Skrev första stycket"` Sparas dina ändringa till repositoriet? 
+
+Vad säger: `git status`? 
 
 Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (`git add`) och sedan sparar du det (`git commit`). Det går att kombinera de två med `git commit -am "Här skriver du kommentaren"`
 
@@ -66,9 +64,9 @@ Se historiken med `git log --oneline` eller överkursvarianten: `git log --graph
 
 ## Delade repositories
 
-Det finns (minst) två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.
+Det finns minst två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.
 
-I större projekt använder de oftast `fork` and `pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna (`merge`).
+I större projekt används oftast `fork` and `pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna `merge`.
 
 Läs: 
 * https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models 
@@ -80,7 +78,7 @@ Läs:
 * https://www.atlassian.com/git/tutorials/using-branches/git-checkout
 * https://www.atlassian.com/git/tutorials/using-branches/git-merge 
 
-När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö dit du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
+När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö där du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
 
 Som standard på Github får alla repositories en branch som heter `main`.
 
@@ -98,16 +96,14 @@ Byt aktiv branch till main (`git checkout main`) och merga med: `git merge ny-br
 
 När du mergat din branch kan du ta bort den med `git branch -d ny-branch`. Den försvinner lokalt men finns kvar på Github. Titta under branches i ditt repository på github.com.
 
-`git diff` viskar vilka ändringar som gjorts sedan commit. Går även att jämföra olika branches.
+`git diff` visar vilka ändringar som gjorts sedan commit. Det går även att jämföra olika branches.
 
 ## SSH och SSH-nycklar
 
-För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automagiskt.
+För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automatiskt.
 
-Läs: https://en.wikipedia.org/wiki/Secure_Shell och https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh 
+Läs:
+* https://en.wikipedia.org/wiki/Secure_Shell
+* https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh 
 
 Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-
-## Strategier 
-
-TODO: Tex hur ofta commitar och pushar man?
