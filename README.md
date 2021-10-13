@@ -7,13 +7,13 @@
  * En kortare cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
  * Lång genomgång av massa Git och GitHub: https://www.youtube.com/watch?v=RGOj5yH7evk
 
-## Versionshantering?
+## Versionshantering
 
 Följande videos (~5min / video) är en kort intro till versionshantering och Git.
-* https://git-scm.com/video/what-is-version-control
-* https://git-scm.com/video/what-is-git 
-* https://git-scm.com/video/get-going (delar är redan sagt i del 1)
-* https://git-scm.com/video/quick-wins (denna kan ni bara skumma, minst viktig av dessa 4) 
+* Vad är versionshantering?: https://git-scm.com/video/what-is-version-control
+* Vad är Git?: https://git-scm.com/video/what-is-git 
+* Börja med Git: https://git-scm.com/video/get-going (delar är redan sagt i del 1)
+* Fördelar med Git: https://git-scm.com/video/quick-wins (denna kan ni bara skumma, minst viktig av dessa 4) 
 
 ## Git-övningar
 
